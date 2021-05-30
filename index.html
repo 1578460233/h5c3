@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>H5和C3</title>
+  <style>
+    video{
+      width: 600px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+  h5新语义化标签<a target="_blank" href="https://upload-images.jianshu.io/upload_images/24830130-1f0015a8c3ac0454.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">查看属性</a>
+  <hr>
+  <video  controls src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/812358b69886e576c66a01f1f00affe9.mp4"></video>
+  <br>
+  自动播放 显示控件<a target="_blank" href="https://upload-images.jianshu.io/upload_images/24830130-f811e70c21a06f98.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">查看属性</a>
+  <br>
+  <audio  controls src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/812358b69886e576c66a01f1f00affe9.mp4"></audio>
+  <br>
+  自动播放 显示控件<a target="_blank" href="https://upload-images.jianshu.io/upload_images/24830130-26bbc6d3742ae518.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">查看属性</a>
+  <hr>
+  h5新增input类型<a target="_blank" href="https://upload-images.jianshu.io/upload_images/24830130-089a8805dc41885f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">查看属性</a>
+  <hr>
+  h5新表单属性<a target="_blank" href="https://upload-images.jianshu.io/upload_images/24830130-3899fd9c963c9a63.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">查看属性</a>
+  <hr>
+  
+</body>
+<style>
+  /* css3 */
+  input[value]{
+    color: red;
+    /* 选中input中有value的 */
+  }
+  input[type=text]{
+    color: pink;
+    /* 选中input中type是text的 */
+  }
+  input[name^=text]{
+    color: pink;
+    /* 选中input中name是text开头的 */
+  }
+  input[name$=text]{
+    color: pink;
+    /* 选中input中name是text结尾的 */
+  }
+  input[name*=text]{
+    color: pink;
+    /* 选中input中name是包含text的 */
+  }
+  li:first-child{
+    color: red;
+    /* 选中li中第一个元素 */
+  }
+  li:last-child{
+    color: red;
+    /* 选中li中最后一个元素 */
+  }
+  li:nth-child(2){
+    color: red;
+    /* 可以是even偶数  odd奇数 公式，如2n（奇数） 2n+1（偶数） 5n（5 10 15） n+5（从第五个开始到最后） -n+5 （前五个）*/
+    /* 选中li中第二个元素 */
+  }
+  li:nth-of-type(2){
+    color: red;
+    /* 有点区别 这个好用一点*/
+  }
+  div::after{
+    content: "";
+    /* 必须有这个属性，注意加上的是行内元素 */
+  }
+  .tudou:hover::before{
+    color: red;
+    /* 鼠标经过tudou显示before 
+    box-sizing: border-box;  怪异盒子模型，包含边框
+    filter: blur(5px);图片模糊处理
+    width:calc(100%-30px);
+    */
+  }
+</style>
+</html>
